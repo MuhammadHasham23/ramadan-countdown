@@ -44,3 +44,7 @@ body {
 .footer-text a {
   text-decoration: none;
 }
+
+span {
+  color: purple;
+}

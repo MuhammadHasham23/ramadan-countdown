@@ -219,10 +219,10 @@ let interval;
 if(timezone === "PM") {
   interval = setInterval(()=>calcTime(date.iftar),1000);
   isIftar = true;
-  timer.innerHTML = "Time Remaining for Aftari"
+  timer.innerHTML = "Time Remaining for <span>Aftari</span>"
 } else {
  interval = setInterval(()=>calcTime(date.sehar),1000);
- timer.innerHTML = "Time Remaining for Sehri"
+ timer.innerHTML = "Time Remaining for <span>Sehri</span>"
 }
 
 /**
@@ -257,7 +257,7 @@ function calcTime(time) {
   /**
     * Calculating Percentage
   **/
-  const progressBarWidth = variableSeconds * bar.offsetWidth / diffSeconds;
+  const progressBarWidth = variableSeconds * bar.clientWidth / diffSeconds;
   
   elem.style.width = progressBarWidth + "px";
   variableSeconds--;
