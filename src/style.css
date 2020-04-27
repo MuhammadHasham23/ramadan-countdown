@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap');
+
+body {
+  background-color: black;
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+.countdown {
+  color: white;
+  display:block;
+  text-align:center;
+  margin: 4% auto;
+  font-size:20em;
+}
+
+#progressBar {
+  width: 90%;
+  margin: 10px auto;
+  height: 22px;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+#progressBar div {
+  height: 100%;
+  text-align: right;
+  padding: 0 0px;
+  line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+  width: 0%;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.time-remaining {
+  color:white;
+  text-align: center;
+  font-size:5em;
+}
+
+.footer-text {
+  color:white;
+  text-align:center;
+}
+.footer-text a {
+  text-decoration: none;
+}
